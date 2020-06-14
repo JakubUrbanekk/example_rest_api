@@ -1,9 +1,8 @@
-package com.urbanek.webApp.companies;
+package com.urbanek.webApp.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -14,7 +13,7 @@ import java.util.UUID;
 @ToString
 public class CompanyDtoWithoutEmployees implements Serializable {
     @NotNull
-    @UniqueElements
     private String name;
+    @NotNull
     private UUID identifier;
 }

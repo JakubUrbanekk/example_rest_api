@@ -1,6 +1,5 @@
-package com.urbanek.webApp.employees;
+package com.urbanek.webApp.dtos;
 
-import com.urbanek.webApp.companies.CompanyDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

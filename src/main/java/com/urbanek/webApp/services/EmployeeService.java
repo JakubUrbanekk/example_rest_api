@@ -23,9 +23,6 @@ public class EmployeeService {
     private final EmployeeRepository repository;
     private final EmployeeMapper employeeMapper;
 
-    private Function <UUID, EmployeeNotFoundException> companyNotFound =
-            (uuid -> new EmployeeNotFoundException(EMPLOYEE_NOT_FOUND + uuid));
-
     public EmployeeService(EmployeeRepository repository, EmployeeMapper employeeMapper) {
         this.repository = repository;
         this.employeeMapper = employeeMapper;

@@ -1,8 +1,9 @@
-package com.urbanek.webApp.employees;
+package com.urbanek.webApp.mappers;
 
-import com.urbanek.webApp.companies.Company;
-import com.urbanek.webApp.companies.CompanyDTO;
-import org.mapstruct.*;
+import com.urbanek.webApp.daos.Employee;
+import com.urbanek.webApp.dtos.EmployeeDTO;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
 
 @Mapper(componentModel="spring")
 public interface EmployeeMapper {
